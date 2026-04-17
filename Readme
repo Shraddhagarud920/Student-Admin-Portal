@@ -1,0 +1,16 @@
+Full-Stack Spring Boot & React ApplicationA robust web application featuring a Spring Boot REST API backend and a React.js frontend. This project demonstrates full CRUD (Create, Read, Update, Delete) functionality and user session management.🚀 Features & PagesHome: The main landing page and entry point.Register: New user account creation.Display: View data fetched dynamically from the Spring Boot backend.Update: Edit and modify existing data records.Signout: Secure logout logic to terminate the user session.🛠️ Tech StackBackendFrontendDatabase/ToolsJava 17+React.jsMaven WrapperSpring BootAxios (API Calls)Spring Data JPASpring WebReact RouterH2 / MySQL📂 Folder StructurePlaintext├── backend/           # Spring Boot Application
+│   ├── src/           # Controller, Model, Repository classes
+│   ├── mvnw           # Maven Wrapper (Executable)
+│   └── pom.xml        # Backend dependencies
+├── frontend/          # React Application
+│   ├── src/           # Home, Display, Register, Update components
+│   ├── public/        # Static assets
+│   ├── package.json   # Frontend dependencies
+│   └── package-lock.json
+└── README.md
+⚙️ Getting Started1. Backend Setup (Spring Boot)Navigate to the backend directory:Bashcd backend
+Run the application:Bash./mvnw spring-boot:run
+The server will start at: http://localhost:80802. Frontend Setup (React)Navigate to the frontend directory:Bashcd frontend
+Install dependencies:Bashnpm install
+Start the development server:Bashnpm start
+The app will open at: http://localhost:3000🔌 API SummaryMethodEndpointDescriptionGET/api/...Fetch data for the Display pagePOST/api/...Handle data for the Register pagePUT/api/...Update data for the Update page
